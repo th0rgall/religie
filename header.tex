@@ -2,3 +2,10 @@
 \newenvironment{vraag}{\bfseries\noindent}{\par}
 \newenvironment{stelling}{\begin{vraag}Stelling: }{\end{vraag}}
 \newenvironment{antwoord}{}{\par\medskip}
+
+\definecolor{solarback}{HTML}{FDF6E3}
+\definecolor{solarfront}{HTML}{657A81}
+\mdfdefinestyle{citaat}{linewidth=0pt,backgroundcolor=solarback,fontcolor=solarfront}
+\newenvironment{citaat}[1]{\begin{mdframed}[style=citaat]
+#1: [...]}{[...]
+\end{mdframed}}
